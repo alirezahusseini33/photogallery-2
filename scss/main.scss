@@ -1,0 +1,15 @@
+@import "variables";
+@import "utility";
+@import "colors";
+@import "header";
+@import "humberger";
+@import "showcase";
+// STYLES STARTS HERE
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $light-skin-tone;
+    line-height: 1.3;
+    color: $dark-font-color;
+    position: relative;
+}

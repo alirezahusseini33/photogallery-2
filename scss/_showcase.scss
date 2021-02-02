@@ -1,0 +1,22 @@
+.showcase {
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $dark-bg;
+    background-blend-mode: overlay;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    // vedio {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: cover;
+    // }
+}

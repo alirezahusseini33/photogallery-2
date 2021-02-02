@@ -1,0 +1,35 @@
+// humberger
+.humberger-menu {
+    position: fixed;
+    top: 1rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 3rem;
+    z-index: 10000;
+    cursor: pointer;
+    span {
+        height: 6px;
+        width: 3rem;
+        background-color: $light-blue;
+        display: block;
+        margin: 7px 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .line-light {
+        background-color: $light-bg;
+    }
+}
+
+// humberger animation
+.animate .line-2 {
+    transform: translateX(-3rem);
+    opacity: 0;
+}
+
+.animate .line-1 {
+    transform: translateY(210%) rotateZ(45deg);
+}
+
+.animate .line-3 {
+    transform: translateY(-210%) rotateZ(-45deg);
+}
