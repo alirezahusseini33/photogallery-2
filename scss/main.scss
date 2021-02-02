@@ -4,12 +4,14 @@
 @import "header";
 @import "humberger";
 @import "showcase";
+@import "mixins";
 // STYLES STARTS HERE
 body {
+    position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color: $light-skin-tone;
+    font-size: 100%;
     line-height: 1.3;
-    color: $dark-font-color;
-    position: relative;
+    color: $light-font-color;
+    background-color: $light-bg;
 }

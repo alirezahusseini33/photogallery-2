@@ -3,12 +3,73 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($light-bg, 0.3);
     width: 100%;
     z-index: 1000;
+    // navbar styles
     nav {
         position: relative;
         height: 100%;
         width: 100%;
+        // logo container
+        .logo {
+            width: fit-content;
+            width: fit-content;
+            h1 {
+                font-size: 1rem;
+                &::first-letter {
+                    color: $yellow-2;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        // nav links container
+        ul {
+            height: 100%;
+            flex: 4;
+            li {
+                margin: 0 1rem 0 0;
+                a {
+                    font-size: 0.8rem;
+                    color: darken($light-skin-tone, 10%);
+                }
+            }
+        }
+        // call to action container
+        .cta {
+            height: 100%;
+            width: fit-content;
+            .cta-btn {
+                background-color: transparent;
+                border: 1px solid $yellow-2;
+            }
+        }
+    }
+}
+
+// showcase section
+.showcase {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: transparent;
+    .showcase-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($dark-bg, 0.8);
+        background-blend-mode: overlay;
+        background-image: url("../photogallery/assets/backgrouns/jungle.jpg");
+        // z-index: -1;
+    }
+    .showcase-contents {
+        position: relative;
+        z-index: 100;
+        height: 100%;
+        top: 10vh;
+        left: 0;
+        background-color: red;
+        // flex-direction: column;
     }
 }
