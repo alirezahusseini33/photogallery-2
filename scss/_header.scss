@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: all 0.5s linear;
     // navbar styles
     nav {
         position: relative;
@@ -49,4 +50,9 @@
             }
         }
     }
+}
+
+// header bg-color javascript
+.header-onscroll {
+    background-color: $dark;
 }

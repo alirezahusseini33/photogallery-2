@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <!-- animate.css cdn
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <!-- link to animate.css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
     <title>PHOTOGRAPHY</title>
 </head>
 
@@ -51,7 +55,7 @@
     </header>
 
     <!-- showcase -->
-    <section class="showcase">
+    <section class="showcase animate__animated animate__fadeIn animate__slow">
         <!-- showcase content -->
         <article class="showcase-contents container flex">
             <!-- Creator -->
@@ -59,7 +63,7 @@
                 <p>Designed by Alireza husseini</p>
             </div>
             <!-- showcase text -->
-            <div class="s-contents-txt">
+            <div class="animate__animated animate__fadeInDown animate__fast s-contents-txt">
                 <h1>Multiverse</h1>
                 <p>
                     We create high quality sketches and drawing of you by using modern tools and great designs
@@ -78,8 +82,42 @@
             </div>
         </article>
     </section>
+
+    <!-- gallery section -->
+    <section class="gallery">
+        <!-- container -->
+        <div class="container-2 flex">
+            <!-- header -->
+            <article class="gallery-header">
+                <p>Projects</p>
+                <h3>We create unique and memorical picture of you</h3>
+            </article>
+            <!-- gallery-img -->
+            <article class="gallery-img flex">
+                <!-- <div class="img-box">
+                    <img src="./assets/images/greenleaf.jpg" alt="" />
+                </div> -->
+                <div class="img-box">
+                    <img class="g-img" src=" ./assets/images/building.jpg " alt=" " />
+                </div>
+                <div class="img-box">
+                    <img class="g-img" src="./assets/images/light-city.jpg " alt=" " />
+                </div>
+                <div class="img-box">
+                    <img class="g-img" src="./assets/images/sunset.jpg " alt=" " />
+                </div>
+            </article>
+            <!-- gallery-cta -->
+            <article class="gallery-cta">
+                <a href="# ">See full collection</a>
+            </article>
+        </div>
+    </section>
     <!-- SCRIPTS -->
-    <script src="./app/app.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="./app/app.js "></script>
 </body>
 
 </html>
