@@ -18,9 +18,10 @@
             }
         }
         .gallery-cta {
-            padding: 1rem 0 2rem 0;
-            a {
-                color: $dark-font-color;
+            padding: 1rem 0 1rem 0;
+            overflow: hidden;
+            a.btn {
+                overflow: hidden;
             }
         }
         .gallery-img {
@@ -31,9 +32,11 @@
                 flex: 1;
                 height: 100%;
                 cursor: pointer;
+                overflow: hidden;
                 img {
                     object-fit: cover;
-                    background-size: 100%;
+                    // background-size: 100%;
+                    transition: all 2s linear;
                 }
                 & .img-box-txt {
                     position: absolute;
@@ -54,7 +57,7 @@
                 }
             }
             .img-box:hover img {
-                background-size: 150%;
+                transform: scale(1.5);
             }
             .img-box:not(:last-child) {
                 margin: 0 1rem 0 0;

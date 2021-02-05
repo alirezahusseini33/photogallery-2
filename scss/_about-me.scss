@@ -9,10 +9,15 @@
         padding: 0 3rem;
         display: flex;
         column-gap: 5rem;
+        overflow: hidden;
         .about-me-img {
             flex: 1;
             background-image: url("../assets/images/blackgirl.jpg");
+            overflow: hidden;
         }
+        // .about-me-img:hover {
+        //     transform: scale(1.5);
+        // }
         .about-me-description {
             flex: 2;
             flex-direction: column;
