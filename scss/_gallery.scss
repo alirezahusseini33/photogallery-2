@@ -4,7 +4,7 @@
     color: $dark-font-color;
     & .container-2 {
         flex-direction: column;
-        padding: 3rem 3rem;
+        padding: 5rem 3rem 0 3rem;
         .gallery-header {
             text-align: center;
             padding: 2rem 0;
@@ -26,6 +26,7 @@
             height: 300px;
             margin: 1rem 0 2rem 0;
             .img-box {
+                position: relative;
                 flex: 1;
                 height: 100%;
                 cursor: pointer;
@@ -33,12 +34,35 @@
                     object-fit: cover;
                     background-size: 100%;
                 }
+                & .img-box-txt {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    visibility: none;
+                    opacity: 0;
+                    height: 100%;
+                    width: 100%;
+                    flex-direction: column;
+                    background-image: linear-gradient( to bottom, rgba($dark, 0.8), transparent);
+                    color: $light-font-color;
+                    transition: all 0.3s ease-in-out;
+                    z-index: -1;
+                    h3 {
+                        margin: 0 0 1rem 0;
+                    }
+                }
             }
             .img-box:hover img {
                 background-size: 150%;
             }
             .img-box:not(:last-child) {
                 margin: 0 1rem 0 0;
+            }
+            .img-box:hover .img-box-txt {
+                left: 0;
+                visibility: visible;
+                z-index: 1;
+                opacity: 1;
             }
         }
     }

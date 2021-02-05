@@ -16,17 +16,17 @@ window.onscroll = function() {
     }
 };
 
-// gallery img effect on hover
-$(function() {
-    var effects = "animate__animated animate__flipInX";
-    var effectEnd =
-        "animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd";
+// // gallery img effect on hover
+// $(function() {
+//     var effects = "animate__animated animate__flipInX";
+//     var effectEnd =
+//         "animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd";
 
-    $(galleryImg).hover(function() {
-        $(this)
-            .addClass(effects)
-            .one(effectEnd, function() {
-                $(this).removeClass(effects);
-            });
-    });
-});
+//     $(galleryImg).hover(function() {
+//         $(this)
+//             .addClass(effects)
+//             .one(effectEnd, function() {
+//                 $(this).removeClass(effects);
+//             });
+//     });
+// });
