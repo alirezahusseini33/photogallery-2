@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
     color: $dark-font-color;
+    background-image: linear-gradient( to bottom, rgba($dark, 0.3), rgba($dark, 0.02));
     & .container-2 {
         flex-direction: column;
         padding: 5rem 3rem 0 3rem;

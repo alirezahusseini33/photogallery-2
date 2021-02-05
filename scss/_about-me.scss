@@ -1,0 +1,47 @@
+.about-me {
+    height: 80vh;
+    width: 100%;
+    padding: 3rem 0;
+    background-image: linear-gradient( to bottom, rgba($dark, 0.02), rgba($dark, 0.3));
+    .container-2 {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 3rem;
+        display: flex;
+        column-gap: 5rem;
+        .about-me-img {
+            flex: 1;
+            background-image: url("../assets/images/blackgirl.jpg");
+        }
+        .about-me-description {
+            flex: 2;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            color: $dark-font-color;
+            .__about-me-sh {
+                margin: 2rem 0 1rem 0;
+                font-size: 0.5rem;
+            }
+            h2 {
+                margin: 0 0 1rem 0;
+                position: relative;
+            }
+            h2::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -0.5rem;
+                height: 100%;
+                width: 2px;
+                background-color: rgba($dark, 0.3);
+                z-index: 10;
+            }
+            .__about-me-txt {
+                line-height: 1.6;
+                font-size: 0.8rem;
+                margin: 0.2rem 0 2rem 0;
+            }
+        }
+    }
+}
