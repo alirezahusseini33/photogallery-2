@@ -38,15 +38,15 @@
         // call to action container
         .cta {
             height: 100%;
-            width: fit-content;
+            width: 5rem;
             .cta-btn {
                 background-color: $light-bg;
                 border: 1px solid $light-font-color;
-                transition: all 0.3s linear;
+                // transition: all 0.3s linear;
                 padding: 0.3rem 1rem;
             }
             .cta-btn:hover {
-                border: 1px solid $dark;
+                border: 1px solid $light-bg;
             }
         }
     }
