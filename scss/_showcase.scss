@@ -80,7 +80,27 @@
                     color: $light-font-color;
                     font-size: 1rem;
                     padding: 0.3rem;
+                    transition: all 0.3s linear;
                 }
+            }
+            a:hover i {
+                transform: scale(1.5);
+            }
+            // youtube color
+            a:hover .fa-youtube {
+                color: $red;
+            }
+            // facebook color
+            a:hover .fa-facebook-f {
+                color: $light-blue;
+            }
+            // instagram icon color
+            a:hover .fa-instagram {
+                background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+                -webkit-background-clip: text;
+                /* Also define standard property for compatibility */
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
     }
