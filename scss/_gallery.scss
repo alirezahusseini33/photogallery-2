@@ -42,18 +42,21 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    visibility: none;
                     opacity: 0;
                     height: 100%;
                     width: 100%;
                     flex-direction: column;
-                    background-image: linear-gradient( to bottom, rgba($dark, 0.9), transparent 100%);
-                    color: $light-font-color;
-                    transition: all 0.3s ease-in-out;
+                    clip-path: inset(45% 50% 54% 51%);
+                    background-color: rgba($light-bg, 0.6);
+                    color: $dark-font-color;
+                    transition: all 0.5s ease-in-out;
                     z-index: -1;
                     h3 {
                         margin: 0 0 1rem 0;
                     }
+                    // .btn {
+                    //     color: $light-font-color;
+                    // }
                 }
             }
             .img-box:hover img {
@@ -63,10 +66,9 @@
                 margin: 0 1rem 0 0;
             }
             .img-box:hover .img-box-txt {
-                left: 0;
-                visibility: visible;
                 z-index: 1;
                 opacity: 1;
+                clip-path: inset(0 0 0 0);
             }
         }
     }
