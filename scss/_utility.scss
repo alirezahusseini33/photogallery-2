@@ -238,7 +238,8 @@ button,
     font-size: 1rem;
     transition: all 0.3s linear;
     overflow: hidden;
-    color: $yellow-2;
+    color: $light-font-color;
+    background-color: $yellow-2;
 }
 
 .btn-yellow::before {
@@ -248,7 +249,7 @@ button,
     left: 0;
     width: 100%;
     height: 300%;
-    background-color: $yellow-2;
+    background-color: $light-font-color;
     // clip-path: inset(100% 0 0 0);
     clip-path: circle(0% at 50% 100%);
     transition: all 0.3s linear;
@@ -265,6 +266,29 @@ button,
 }
 
 .btn-yellow:hover {
-    color: $light-font-color;
+    color: $dark-font-color;
+    z-index: 10;
+}
+
+// animated border yellow
+.border {
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.border::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $yellow-2;
+    transition: all 0.3s linear;
+}
+
+.border:hover::before {
+    width: 100%;
+    left: 0;
     z-index: 10;
 }

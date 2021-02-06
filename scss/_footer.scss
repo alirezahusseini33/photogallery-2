@@ -20,7 +20,7 @@
                 left: -1rem;
                 height: 100%;
                 width: 2px;
-                background-color: $yellow-2;
+                background-color: rgba($yellow-2, 0.5);
             }
         }
         .footer-content {
@@ -28,6 +28,7 @@
             justify-content: center;
             .quick-links {
                 flex: 1;
+                position: relative;
                 ul {
                     flex-direction: column;
                     width: 100%;
@@ -37,21 +38,76 @@
                             display: inline-block;
                             padding: 0.5rem 0.5rem;
                             text-align: center;
+                            color: $light-font-color;
                         }
                     }
                 }
             }
+            .quick-links::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background-color: rgba($yellow-2, 0.05);
+            }
             .social-media {
                 flex: 1;
+                position: relative;
                 ul {
                     flex-direction: column;
                     li {
+                        width: 40%;
                         a {
-                            display: inline-block;
+                            // display: inline-block;
                             padding: 0.5rem 0;
+                            width: 100%;
+                            justify-content: space-evenly;
+                            font-size: 1rem;
+                            i {
+                                display: inline-block;
+                                flex: 1;
+                                transition: all 0.3s linear;
+                            }
+                            span {
+                                display: inline-block;
+                                flex: 3;
+                                color: $light-font-color;
+                                margin: 0 0 0 1rem;
+                                font-size: 0.8rem;
+                            }
+                        }
+                        a:hover i {
+                            transform: scale(1.5);
+                        }
+                        // youtube color
+                        a:hover .fa-youtube {
+                            color: $red;
+                        }
+                        // facebook color
+                        a:hover .fa-facebook-f {
+                            color: $light-blue;
+                        }
+                        // instagram icon color
+                        a:hover .fa-instagram {
+                            background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+                            -webkit-background-clip: text;
+                            /* Also define standard property for compatibility */
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
                         }
                     }
                 }
+            }
+            .social-media::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background-color: rgba($yellow-2, 0.05);
             }
             .contact-me {
                 flex: 1;
