@@ -4,5 +4,75 @@
     background-color: $dark;
     .container {
         height: 100%;
+        align-items: stretch;
+        flex-direction: column;
+        overflow: hidden;
+        .footer-header {
+            flex: 2;
+            justify-content: flex-start;
+            h1 {
+                position: relative;
+            }
+            h1:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -1rem;
+                height: 100%;
+                width: 2px;
+                background-color: $yellow-2;
+            }
+        }
+        .footer-content {
+            flex: 4;
+            justify-content: center;
+            .quick-links {
+                flex: 1;
+                ul {
+                    flex-direction: column;
+                    width: 100%;
+                    li {
+                        a {
+                            height: 100%;
+                            display: inline-block;
+                            padding: 0.5rem 0.5rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .social-media {
+                flex: 1;
+                ul {
+                    flex-direction: column;
+                    li {
+                        a {
+                            display: inline-block;
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+            }
+            .contact-me {
+                flex: 1;
+                flex-direction: column;
+                a {
+                    display: block;
+                    overflow: hidden;
+                    margin: 0.5rem 0;
+                    i {
+                        margin-right: 1rem;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .footer-end-txt {
+            flex: 1;
+            justify-content: flex-start;
+            p {
+                font-size: 0.6rem;
+            }
+        }
     }
 }
