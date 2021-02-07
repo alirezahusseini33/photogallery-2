@@ -3,6 +3,7 @@
     width: 100%;
     background-color: rgba($dark, 0.3);
     color: $dark-font-color;
+    position: relative;
     & .container-2 {
         flex-direction: column;
         padding: 5rem 3rem 0 3rem;
