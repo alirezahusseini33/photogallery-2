@@ -1,5 +1,5 @@
 .testimonial {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: rgba($dark, 0.3);
     .container-2 {
@@ -10,15 +10,27 @@
         .testimonial-header {
             flex: 1;
             flex-direction: column;
+            @include breakpoint-down(small) {
+                align-items: flex-start;
+            }
             p {
                 font-size: 0.5rem;
                 margin: 0 0 1rem 0;
+                @include breakpoint-down(small) {
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
             }
         }
         .testimonial-content {
             flex: 3;
             margin: 2rem 0 0 0;
             column-gap: 3rem;
+            @include breakpoint-down(small) {
+                flex-direction: column;
+                row-gap: 3rem;
+                margin: 3rem 0 0 0;
+            }
             .testimonial-box {
                 flex-direction: column;
                 justify-content: space-evenly;

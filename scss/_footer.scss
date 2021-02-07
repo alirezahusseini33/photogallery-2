@@ -1,5 +1,5 @@
 .footer {
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     background-color: $dark;
     .container {
@@ -12,6 +12,10 @@
             justify-content: flex-start;
             h1 {
                 position: relative;
+                @include breakpoint-down(small) {
+                    padding: 1rem 0;
+                    font-size: 1.2rem;
+                }
             }
             h1:before {
                 content: "";
@@ -26,6 +30,9 @@
         .footer-content {
             flex: 4;
             justify-content: center;
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
             .quick-links {
                 flex: 1;
                 position: relative;
